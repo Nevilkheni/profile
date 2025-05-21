@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: linear-gradient(135deg, #022c43, #1b8eb7, #33d9b2);
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes oceanFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.home {
+  background: linear-gradient(135deg,#29b493, #022c43, #1b8eb7);
+  background-size: 200% 200%;
+  animation: oceanFlow 50s ease infinite;
+}
+
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    height:auto;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+}
+
+
+.container h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.container p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 8px 0;
+}
+
+.container img {
+  width: 400px;
+  margin-bottom: -115px;
+  
+}
+
+
+.typewriter {
+  font-size: 1.5rem;
+  color: white;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  width: fit-content;
+  animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+  0% { border-color: transparent; }
+  50% { border-color: white; }
+  100% { border-color: transparent; }
+}
