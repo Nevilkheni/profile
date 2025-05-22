@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
         <div className="footer">
-            <p>© 2023 Your Company Name. All rights reserved.</p>
+            <p>© 2025 Your Nevil Kheni. All rights reserved.</p>
         </div>
         
       
