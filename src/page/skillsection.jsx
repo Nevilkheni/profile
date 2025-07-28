@@ -7,7 +7,7 @@ import cssImg from "../assets/css.png";
 import gitbashImg from "../assets/gitlib.svg";
 import jsImg from "../assets/javascript.svg";
 import gitlabImg from "../assets/gitlab.svg";
-import reactImg from "../assets/React..svg";
+import reactImg from "../assets/React.svg";
 import tailwindImg from "../assets/tailwind-.png";
 import bootstrapImg from "../assets/bootstrap.svg";
 import firebaseImg from "../assets/Firebase..svg";
