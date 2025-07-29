@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import "../style/project.css";
 import downloadImg from "../assets/download.jpeg";
+import '../style/theme.css'; 
+
 
 const projects = [
   {
@@ -76,7 +78,7 @@ function ProjectCard({ project }) {
 
 export default function ProjectSection() {
   return (
-    <section className="project-section">
+    <section className="project-section"  style={{ backgroundColor: "inherit" }}>
       <h2 className="section-title">My Projects</h2>
       <div className="card-grid">
         {projects.map((project, index) => (

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import avatar from "../assets/avtar.png";
+import "../style/theme.css";
+
 import "../style/home.css";
 
 function Home() {
@@ -67,12 +69,24 @@ function Home() {
   }, []);
 
   return (
-    <div className="home">
+    <div className="home" style={{ backgroundColor: "inherit" }}>
       <div className="container">
         <div>
           <h1>{headingText}</h1>
           <div className="typewriter">
             <span>{roleText}</span>
+          </div>
+
+          <div className="cta-buttons">
+            <a href="/public/nevil-reactjs.pdf" download className="btn">
+              Download Resume
+            </a>
+            <a href="#contact" className="btn">
+              Contact Me
+            </a>
+            <a href="#projects" className="btn">
+              View Projects
+            </a>
           </div>
         </div>
         <img src={avatar} alt="example" />

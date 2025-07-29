@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/skill.css";
-
+import '../style/theme.css'; 
 import htmlImg from "../assets/html.svg";
 import githubImg from "../assets/github.svg";
 import cssImg from "../assets/css.png";
@@ -31,7 +31,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <div className="skills-container">
+    <div className="skills-container"  style={{ backgroundColor: "inherit" }}>
       <h2>My Skills</h2>
       <div className="line"></div>
       <div className="slider">

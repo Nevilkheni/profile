@@ -1,0 +1,24 @@
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.ocean {
+  background-color: #1e3d59;
+  color: white;
+}
+
+body.teal {
+  background-color: #006d77;
+  color: white;
+}
+
+body.navy {
+  background-color: #001f3f;
+  color: white;
+}
+
+body.lightblue {
+  background-color: #1f2937;
+  color: black;
+}
