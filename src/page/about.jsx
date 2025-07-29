@@ -14,7 +14,7 @@ function About() {
             I'm <strong>Nevil Kheni</strong>, a passionate Front-End Developer with a sharp focus on modern web technologies. I specialize in building fast, responsive, and accessible user interfaces using React.js, Next.js, and Tailwind CSS.
           </p>
           <p className="bio">
-            With over 2 years of experience crafting web applications, I’ve worked on dynamic portfolios, e-commerce dashboards, and interactive landing pages. I enjoy solving UI/UX challenges and writing clean, scalable code.
+            With over 6 month of experience crafting web applications, I’ve worked on dynamic portfolios, e-commerce dashboards, and interactive landing pages. I enjoy solving UI/UX challenges and writing clean, scalable code.
           </p>
           <p className="bio">
             Beyond code, I love staying up-to-date with the latest in tech, contributing to open-source projects, and continuously learning to grow as a developer.
