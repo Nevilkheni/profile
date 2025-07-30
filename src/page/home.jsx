@@ -84,7 +84,7 @@ function Home() {
             <a href="#contact" className="btn">
               Contact Me
             </a>
-            <a href="#projects" className="btn">
+            <a href="#project" className="btn">
               View Projects
             </a>
           </div>

@@ -1,0 +1,65 @@
+[
+  {
+    "title": "FilmyVerse",
+    "description": "A modern movie streaming and browsing web app with search, category filtering, and responsive UI.",
+    "skills": "ReactJs, TMDB API, CSS, Responsive Design",
+    "image": "filmyverse.png",
+    "link": "https://filmyverse-six-gray.vercel.app/"
+  },
+  {
+    "title": "Coffee Shop",
+    "description": "A sleek and responsive coffee shop website featuring product listings, smooth animations, and an interactive UI.",
+    "skills": "HTML, CSS, JavaScript, responsive design",
+    "image": "coffee.png",
+    "link": "https://coffee-one-nu.vercel.app/"
+  },
+  {
+    "title": "Club",
+    "description": "An eco-focused platform showcasing sustainability events, community initiatives, and resources for green living.",
+    "skills": "ReactJs, Tailwind, Responsive UI",
+    "image": "club.png",
+    "link": "https://club-green-three.vercel.app/"
+  },
+  {
+    "title": "LinkVault",
+    "description": "A secure web app for saving, managing, and organizing personal links with user authentication.",
+    "skills": "Nextjs, Firebase Auth, Firestore, TailwindCSS",
+    "image": "mysite.png",
+    "link": "https://mysite-inky-seven.vercel.app/"
+  },
+  {
+    "title": "Nevil's Portfolio",
+    "description": "A personal portfolio website to showcase projects, skills, and contact information with a clean responsive design.",
+    "skills": "ReactJs, TailwindCSS, Responsive UI",
+    "image": "profile.png",
+    "link": "https://profile-ruddy-two.vercel.app/"
+  },
+  {
+    "title": "Auth‑Vued",
+    "description": "A Vue.js web application implementing authentication and authorization flows including login, sign-up, protected routes, and user dashboard.",
+    "skills": "Vue.js, Router, Firebase, TailwindCSS",
+    "image": "authentication.png",
+    "link": "https://authentication-vued.vercel.app/"
+  },
+  {
+    "title": "E-Commerce Cart",
+    "description": "A modern e‑commerce web app built with React, featuring dynamic product listing, cart functionality, and responsive design.",
+    "skills": "ReactJS, Redux, CSS/SCSS, TailwindCSS, Responsive UI",
+    "image": "cart.png",
+    "link": "https://imarket-wine.vercel.app/"
+  },
+  {
+    "title": "Keep Notes",
+    "description": "A notes app with create, update, delete, and Firebase sync features for seamless note management.",
+    "skills": "React.js, Firebase, CSS",
+    "image": "notes.png",
+    "link": "https://keep-two.vercel.app/"
+  },
+  {
+    "title": "Tic-Tac-Toe",
+    "description": "A classic Tic-Tac-Toe game built with React, offering two-player mode and responsive design.",
+    "skills": "ReactJS, CSS, State Management",
+    "image": "tictactoe.png",
+    "link": "https://tic-tac-toe-liart-five.vercel.app/"
+  }
+]

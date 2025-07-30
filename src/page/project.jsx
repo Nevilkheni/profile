@@ -1,32 +1,19 @@
 import React, { useRef } from "react";
 import "../style/project.css";
-import downloadImg from "../assets/download.jpeg";
-import '../style/theme.css'; 
+import "../style/theme.css";
+import projectsData from "../data/projects.json";
 
-
-const projects = [
-  {
-    title: "Explain Life",
-    description:
-      "Life insurance policy recommendation agent website with coverage calculation using NodeJS backend (Admin & User panel).",
-    skills: "ReactJs, CSS, Redux Toolkit",
-    image: downloadImg,
-  },
-  {
-    title: "Semicolon Portfolio",
-    description:
-      "Company portfolio showcasing services and projects, built using Next.js and Firebase.",
-    skills: "NextJs, CSS, Firebase",
-    image: downloadImg,
-  },
-  {
-    title: "Fitness Administration Portal",
-    description:
-      "Fitness plan with workout videos, calorie tracking, and dietary recommendations.",
-    skills: "ReactJs, Bootstrap",
-    image: downloadImg,
-  },
-];
+const images = {
+  "filmyverse.png": require("../assets/filmyverse.png"),
+  "coffee.png": require("../assets/coffee.png"),
+  "club.png": require("../assets/club.png"),
+  "mysite.png": require("../assets/mysite.png"),
+  "profile.png": require("../assets/profile.png"),
+  "authentication.png": require("../assets/authentication.png"),
+  "cart.png": require("../assets/cart.png"),
+  "notes.png": require("../assets/notes.png"),
+  "tictactoe.png": require("../assets/tictactoe.png")
+};
 
 function ProjectCard({ project }) {
   const cardRef = useRef();
@@ -36,10 +23,8 @@ function ProjectCard({ project }) {
   const handleMouseMove = (e) => {
     const card = cardRef.current;
     const rect = card.getBoundingClientRect();
-
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
@@ -47,8 +32,6 @@ function ProjectCard({ project }) {
     const rotateY = clamp(((x - centerX) / centerX) * 20, -20, 20);
 
     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
-    card.style.setProperty("--x", `${x}px`);
-    card.style.setProperty("--y", `${y}px`);
     card.style.transition = "none";
   };
 
@@ -66,26 +49,44 @@ function ProjectCard({ project }) {
       onMouseLeave={handleMouseLeave}
     >
       <div className="glow" />
-      <img src={project.image} alt={project.title} className="card-image" />
+      <img
+        src={images[project.image]}
+        alt={project.title}
+        className="card-image"
+      />
       <h3 className="card-title">{project.title}</h3>
       <p className="card-skills">
         <strong>Skills:</strong> {project.skills}
       </p>
       <p className="card-description">{project.description}</p>
+      {project.link && (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-link-btn"
+        >
+          Visit Website
+        </a>
+      )}
     </div>
   );
 }
 
 export default function ProjectSection() {
   return (
-    <section className="project-section"  style={{ backgroundColor: "inherit" }}>
-      <h2 className="section-title">My Projects</h2>
-      <div className="card-grid">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+    <div className="projects-container" id="project">
+      <h2 className="project-title">My Projects</h2>
+      <div className="line"></div>
+      <div className="projects-slider">
+        <div className="projects-track">
+          {[...projectsData, ...projectsData].map((project, index) => (
+            <div className="project-slide" key={index}>
+              <ProjectCard project={project} />
+            </div>
+          ))}
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
-

@@ -25,7 +25,7 @@ function About() {
             <li>✅ React.js / Next.js</li>
             <li>🎨 HTML, CSS, Sass, Tailwind CSS</li>
             <li>⚙️ JavaScript (ES6+)</li>
-            <li>🧰 Git, GitHub, VS Code</li>
+            <li>🧰 Git, GitHub, VS Code, cursor</li>
             <li>🧪 Jest, React Testing Library</li>
           </ul>
 

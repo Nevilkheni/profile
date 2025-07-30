@@ -11,10 +11,10 @@
 }
 
 @media (max-width: 700px) {
-  .section-title{
+  .section-title {
     text-align: center;
-  }}
-
+  }
+}
 
 .card-grid {
   display: flex;
@@ -34,7 +34,7 @@
   transform-style: preserve-3d;
   perspective: 1000px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform-origin: center center; 
+  transform-origin: center center;
 }
 
 .project-card.fancy-hover:hover {
@@ -92,4 +92,128 @@
 .card-description {
   font-size: 14px;
   color: #cbd5e1;
+}
+
+.project-link-btn {
+  display: inline-block;
+  margin: 12px 15px 0;
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.project-link-btn:hover {
+  background-color: #2563eb;
+}
+
+.projects-container {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(31, 41, 55);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.project-title {
+  padding: 0 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  text-align: start;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .project-title {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.projects-slider {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.projects-slider:hover .projects-track {
+  animation-play-state: paused;
+}
+
+.projects-track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: max-content;
+  animation: scrollProjects 30s linear infinite;
+}
+
+.project-slide {
+  flex: 0 0 auto;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+}
+
+@keyframes scrollProjects {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.projects-container {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(31, 41, 55);
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.projects-slider {
+  overflow: hidden;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;    
+}
+
+.projects-slider::-webkit-scrollbar {
+  display: none; 
+}
+
+.projects-track {
+  display: flex;
+  width: max-content;
+  animation: scrollProjects 25s linear infinite;
+}
+
+.project-slide {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+@keyframes scrollProjects {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
