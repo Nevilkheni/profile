@@ -26,7 +26,10 @@ function Contact() {
         <div className="contact-info">
           <h4>Email</h4>
           <p>
-            <a href="mailto:youremail@example.com">nevilkheni135@gmail.com</a>
+            <a href="nevilkheni135@gmail.com">nevilkheni135@gmail.com</a>
+          </p>
+          <p>
+            <a href="6351091508">6351091508</a>
           </p>
 
           <h4>Social</h4>
