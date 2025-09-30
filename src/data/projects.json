@@ -61,5 +61,12 @@
     "skills": "ReactJS, CSS, State Management",
     "image": "tictactoe.png",
     "link": "https://tic-tac-toe-liart-five.vercel.app/"
+  },
+   {
+    "title": "Aesop",
+    "description": "A classic UI built with Next tailwind and responsive design.",
+    "skills": "Nextjs, Tailwind",
+    "image": "tictactoe.png",
+    "link": "https://aesop-nevil.vercel.app/"
   }
 ]
